@@ -28,5 +28,5 @@ jobs:
           docker push kasemsut555/todo-backend:latest
       - name: Tag & Push Frontend image
         run: |
-          docker tag backend:latest kasemsut555/todo-frontend:latest
+          docker tag fronted:latest kasemsut555/todo-frontend:latest
           docker push kasemsut555/todo-frontend:latest
