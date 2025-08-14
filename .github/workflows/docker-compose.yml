@@ -24,9 +24,9 @@ jobs:
           docker compose -f docker-compose.yml build
       - name: Tag & Push Backend image
         run: |
-          docker tag backend kasemsut555/todo-backend:latest
+          docker tag todo-backend:latest kasemsut555/todo-backend:latest
           docker push kasemsut555/todo-backend:latest
       - name: Tag & Push Frontend image
         run: |
-          docker tag frontend kasemsut555/todo-frontend:latest
+          docker tag todo-frontend:latest kasemsut555/todo-frontend:latest
           docker push kasemsut555/todo-frontend:latest
